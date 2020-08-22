@@ -1,9 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 }
@@ -48,7 +46,7 @@ void MainWindow::on_convertButton_clicked()
             {
                 newFileName += ".bmp";
             }
-
+            //qDebug 表示
             qDebug() << newFileName << format;
 
             if (image.save(newFileName, 0, -1))
