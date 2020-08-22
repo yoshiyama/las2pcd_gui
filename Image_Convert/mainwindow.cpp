@@ -7,16 +7,17 @@ MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),ui(new Ui::MainWind
 {
     ui->setupUi(this);//class Ui_MainWindowのメンバ関数
 }
-
+//お決まり
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
+
 void MainWindow::on_browseButton_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this, "Open Image", "", "Image Files (*.png *.jpg *.bmp)");
-    ui->filePath->setText(fileName);
+    ui->filePath->setText(fileName);//QLineEdit *filePath;public Q_SLOTS:void setText(const QString &);
 }
 
 void MainWindow::on_convertButton_clicked()

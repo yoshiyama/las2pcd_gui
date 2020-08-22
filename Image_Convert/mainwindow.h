@@ -24,7 +24,7 @@ private slots:
     void on_browseButton_clicked();
     void on_convertButton_clicked();
 
-//
+//お決まり
 private:
     Ui::MainWindow *ui;
 };
