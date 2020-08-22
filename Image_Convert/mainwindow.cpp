@@ -1,9 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+//mainwindow.ui を、Qtが　ui_mainwindow.h　ファイルに加工して作成
 
+//お決まり
 MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    ui->setupUi(this);//class Ui_MainWindowのメンバ関数
 }
 
 MainWindow::~MainWindow()

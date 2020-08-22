@@ -6,10 +6,12 @@
 #include <QMessageBox>
 #include <QDebug>
 
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+    class MainWindow;
 }
 
+//継承
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -22,6 +24,7 @@ private slots:
     void on_browseButton_clicked();
     void on_convertButton_clicked();
 
+//
 private:
     Ui::MainWindow *ui;
 };
